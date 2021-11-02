@@ -19,7 +19,7 @@
   border: 2px solid rgb(63, 63, 63);
   background-color: transparent;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #last {
@@ -53,7 +53,7 @@
   content: "";
   z-index: -1;
   top: 0;
-  left: -110px;
+  right: 140px;
   color: white;
   height: 100%;
   width: 100%;
@@ -63,7 +63,7 @@
 }
 
 #translate:hover::after {
-  left: 0;
+  right: 0;
   transform: rotateX(200px);
 }
 
@@ -78,7 +78,7 @@
   height: 100%;
   width: 100%;
   left: 0;
-  bottom: 55px;
+  bottom: 73px;
   text-align: center;
   transform-origin: top;
   line-height: 55px;
@@ -102,7 +102,7 @@
   right: 0;
   top: 0;
   text-align: center;
-  line-height: 3.1rem;
+  line-height: 4rem;
   background-color: black;
   color: white;
   opacity: 0;
