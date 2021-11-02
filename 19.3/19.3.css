@@ -1,0 +1,97 @@
+/* general */
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  color: rgb(63, 63, 63);
+  font-weight: bold;
+  margin: 0.4% 2%;
+  padding: 2% 3%;
+  border: 2px solid rgb(63, 63, 63);
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+#last {
+  display: flex;
+  justify-content: center;
+}
+
+/* rotate */
+
+#rotate:after {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  background-color: red;
+  position: absolute;
+  transition: all 2s;
+}
+
+#rotate:hover::after {
+  transform: rotate(0);
+}
+
+/* translate X */
+
+#translate:after {
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: -110px;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+  position: absolute;
+  transition: all 1s;
+}
+
+#translate:hover::after {
+  left: 0;
+  transform: rotateX(200px);
+}
+
+#translate:hover {
+  color: white;
+}
+
+/* translate Y */
+
+#translateY:before {
+  content: "Yeah!";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 55px;
+  text-align: center;
+  transform-origin: top;
+  line-height: 55px;
+  background-color: yellow;
+  position: absolute;
+  transition: all 1s ease-in;
+}
+
+#translateY:hover::before {
+  bottom: 0;
+  transform: rotateY(100%);
+}
+
+/* translate Y */
+
+
